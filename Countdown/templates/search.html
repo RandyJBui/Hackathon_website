@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    {%load static%}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" {% static '/search.css'%}">
+    <title>Search Page</title>
+</head>
+<body>
+    <header class="search-header">
+        <nav class="main-nav">
+            <h1 class="nav-logo" >PATHWAYS</h1>
+            <ion-icon class="nav-menu" name="menu-outline"></ion-icon>
+        </nav>
+
+        <div class="search-textbox">
+            <h1 class="search-title">Sustainable Products</h1>
+            <p class="search-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At saepe doloribus corrupti cum fugit fuga quis beatae. Dolorum eveniet fugit repellendus laborum eum veritatis voluptates incidunt.</p>
+
+            <form>
+                <div class="search-bar">
+                    <input class="search-input" type="text" name="query">
+                    <ion-icon class="search-logo" name="search-outline"></ion-icon>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="results-area">
+            <h1 class="results-title">Search Results...</h1>
+          
+         
+            {% for productCard in productCard%}
+            {% if forloop.counter <= 4 %}
+            <div class="search-results">
+                <img class="result-img" src="{{productCard.imageLink}}">
+                <div class="result-textbox">
+                    <h2 class="result-title"> {{productCard.title}} </h2>
+                    <p class="result-desc">{{productCard.description}}</p>
+                    <a href="{{productCard.prodLink}}" class="result-btn">Shop Now!</a>
+                </div>
+            </div>
+            {%endif%}
+            
+            {%endfor%}
+        </div>
+   
+           
+
+        </div>
+
+    </header>
+
+    <!-- ion icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

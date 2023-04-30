@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;700;800&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    color: white;
+}
+
+/* NAV and HEADER 2*/
+.main-nav {
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* setting nav left and right spacing */
+.nav-logo {
+    margin-left: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+}
+
+.nav-menu {
+    font-size: 2.5rem;
+}
+
+.nav-menu {
+    margin-right: 2rem;
+}
+
+.main-header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("fire.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-main-content {
+    /* background-color: aqua; */
+    width: 75%;
+    height: 40rem;
+    margin: auto;
+    transform: translate(0, 50%);
+
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    text-align: center;
+}   
+
+.main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+.main-desc {
+    line-height: 1.5;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    width: 75%;
+    transform: translate(15%, 0);
+}
+
+.timer {
+    display: flex;
+    gap: 4rem;
+    width: 75%;
+    justify-content: center;
+    transform: translate(16%, 0);
+    font-size: 3rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+
+.btn-series{
+    height: 5vh;
+    transform: translate(0, 425%);
+    display: flex;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    gap: 4rem;
+}
+.btn{
+    cursor: pointer;
+}
+
+.btn:hover{
+    border-bottom: 1px solid white;
+}
+
+
+.section-info {
+    font-family: 'Lato', sans-serif;
+    height: 60rem;
+    background-color: black;
+}
+
+.text-box-info {
+    width: 70%;
+    height: 35rem;
+    margin: auto;
+    text-align: center;
+    transform: translate(0, 50%);
+}
+
+.section-info-title {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.section-info-desc {
+    width: 75%;
+    margin: auto;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.section-info-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border: 1px solid white;
+    font-weight: 300;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+/* SECTION SEARCH */
+.search-container {
+    color: black;
+    height: 90vh;
+    background-color: white;
+}
+
+
+.section-header {
+    height: 20vh;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.search-title {
+    font-family: 'Lato', serif;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.search-desc {
+    font-size: 1.5rem;
+    width: 75%;
+    transform: translate(15%, 0);
+    line-height: 1.5;
+}
+
+.section-search-area {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar {
+    line-height: 3;
+    width: 60rem;
+    border-radius: 50px;
+}
+
+/* SECTION SLIDER */
+/* PRODUCTS */
+.product {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    background-color: rgba(218, 218, 218, 0.684);
+}
+  
+.product-category {
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+  
+.product-container {
+    /* padding: 0 10vw; */
+    height: 65vh;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+  
+.product-container::-webkit-scrollbar {
+    display: none;
+}
+  
+.product-card {
+    flex: 0 0 auto;
+    width: 30rem;
+    height: 45rem;
+    margin-right: 4rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0.75px 0.75px 0.75px 0.75px rgb(167, 167, 167);
+    /* border: 1px solid black; */
+    background-color: whitesmoke;
+    color: black;
+}
+
+/* own style */
+.card-img {
+    width: 100%;
+    height: 200px;
+}
+
+/* more cards modification */
+
+.text-area {
+    font-family: 'Lato', sans-serif;
+    width: 250px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-desc1 {
+    transform: translate(0, 50%);
+}
+
+.card-btn1 {
+    transform: translate(0, 125%);
+}
+
+.card-title {
+    font-size: 1.75rem;
+    width: 25rem;
+    margin-bottom: 1rem;
+}
+
+.card-desc {
+    line-height: 1.5;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.card-btn{
+    display: block;
+    width: 35%;
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    padding: 1rem;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    background-color: rgb(165, 165, 165);
+    transform: translate(0, -10);
+    font-family: 'Roboto', sans-serif;
+
+}

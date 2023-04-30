@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'parallax.css'%}">
+</head>
+<body>
+    <header class="main-landing-page">
+        <nav class="main-nav">
+            <h1 class="nav-logo">PATHWAYS</h1>
+            <ion-icon class="nav-menu" name="menu-outline"></ion-icon>
+        </nav>
+
+        <h1 class="big-title translate" data-speed="0.3">We Are Not Sustainable</h1>
+        <!-- make sure to set the z-index too -->
+        <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab accusantium iusto deleniti harum dolor maiores odio. Maxime ipsum quae nesciunt. Beatae culpa nisi nam aliquid, provident quod perspiciatis consectetur ipsam?</p>
+
+        <img src="{% static '1.png' %}" class="person translate" data-speed="-0.05">
+        <img src="{% static '2.png' %}" class="mountain2 translate" data-speed="0.2">
+        <img src="{% static '3.png' %}" class="mountain3 translate" data-speed="0.45">
+        <img src="{% static 'bg.png' %}" class="sky translate" data-speed="0.5">
+    </header>
+    
+    <section class="section-info">
+        <div class="text-box-info">
+            <h2 class="section-info-title">We are wasting more than what the world could handle right now</h2>
+            <p class="section-info-desc">We are expelling more things into the world without a way for it to fully handle it. Our carbon emissions has reached an all time high, to make life more sustainable on earth we must reduce the carbon footprint we have. The use of eco friendly product will reduce the carbon footprint we are exposing</p>
+            <a class="section-info-btn" href="/Countdown/searchProducts">Learn more</a>
+        </div>
+    </section>
+
+    <!-- note: change the header tag below to section -->
+    <header class="main-header">
+        <div class="header-main-content">
+            <div class="main-text-box">
+                <h2 class="main-title">Scientists Predict Many Region in the World Will Be Inhabitable in</h2>
+                <div class="timer">
+                    <div class="timer-individual">
+                        <p id="year">00</p>
+                        <span>Years</span>
+                    </div>
+                    <div class="timer-individual">
+                        <p id="month">00</p>
+                        <span>Months</span>
+                    </div>
+                    <div class="timer-individual">
+                        <p id="days">00</p>
+                        <span>Days</span>
+                    </div>
+                    <div class="timer-individual">
+                        <p id="hours">00</p>
+                        <span>Hours</span>
+                    </div>
+                    <div class="timer-individual">
+                        <p id="minutes">00</p>
+                        <span>Minutes</span>
+                    </div>
+                    <div class="timer-individual">
+                        <p id="seconds">00</p>
+                        <span>Seconds</span>
+                    </div>
+                </div>
+                <p id= "time-desc" class="main-desc">With the current rate of carbon we are emmitting, many areas are suceptible to be inhabitable. It could be caused by the rising sea levels, rise in temperature, or air pollution</p>
+               
+            </div>
+        
+            <div class="btn-series">
+                <a id="timer-btn1" class="btn">Use Green transport</a>
+                <a id="timer-btn2" class="btn">Vote for Clean Energy</a>
+                <a id="timer-btn3" class="btn">Encourage Recycling</a>
+                <a id="timer-btn4" class="btn">Use Eco Products</a>
+            </div>
+        </div>
+    </header> 
+    
+    <section class="product"> 
+        <h2 class="product-category"></h2>
+        <!-- <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="images/arrow.png" alt=""></button> -->
+        <div class="product-container">
+            <div class="product-card">
+                <img class="card-img" src="https://theminimalistvegan.com/wp-content/uploads/2019/08/100-Simple-Tips-To-Live-a-More-Sustainable-Lifestyle-e1566537932796.jpg" class="product-thumb" alt="">
+                
+                <div class="text-area">
+                    <h2 class="card-title card-title1">10 Simple Ways to Live a More Sustainable Life</h2>
+                    <p class="card-desc card-desc1"> Discover practical steps that can make a big impact on reducing your environmental footprint and living a more sustainable lifestyle.</p>
+                </div>
+
+                <a class="card-btn card-btn1">More info</a>
+            </div>
+
+            <div class="product-card">
+                <img class="card-img" src="https://www.travelandleisure.com/thmb/vZGLigAwxRZatRWURKwFqRJ1Vbs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/suitcase-90b4ff1d4f7342a1a1b172ac358d71da.jpg" class="product-thumb" alt="">
+                
+                <div class="text-area">
+                    <h2 class="card-title">Exploring Eco-Friendly Travel Destinations: A Guide to Responsible Tourism</h2>
+                    <p class="card-desc"> Uncover breathtaking destinations that prioritize sustainability and learn how to be a responsible traveler while experiencing the wonders of the world.</p>
+                </div>
+                
+                <a class="card-btn">More info</a>
+            </div>
+            
+            <div class="product-card">
+                <img class="card-img" src="https://www.bhg.com/thmb/SfvVALaQxFyi4vYdbhBR11S41S8=/1280x0/filters:no_upscale():strip_icc()/indoor-potted-houseplants-703b321a-81cf8e1f9aee48a28e1be3bbc45e4386.jpg" class="product-thumb" alt="">
+                
+                <div class="text-area">
+                    <h2 class="card-title">The Power of Plants: How to Create an Eco-Friendly Indoor Oasis</h2>
+                    <p class="card-desc">Dive into the world of indoor plants and discover how they not only beautify your living space but also contribute to cleaner air and a healthier environment.</p>
+                </div>
+                
+                <a class="card-btn">More info</a>
+            </div>
+
+            <div class="product-card">
+                <img class="card-img" src="https://d1e00ek4ebabms.cloudfront.net/production/3dc5a87a-53d4-4f00-a166-6c668fc12909.jpg" class="product-thumb" alt="">
+                
+                <div class="text-area">
+                    <h2 class="card-title">Sustainable Fashion: Ethical and Stylish Choices for a Greener Wardrobe</h2>
+                    <p class="card-desc">Learn how to revamp your wardrobe with eco-conscious fashion choices that are both trendy and ethical, making a positive impact on the planet and the people behind the clothes.</p>
+                </div>
+                
+                <a class="card-btn">More info</a>
+            </div>
+
+            <div class="product-card">
+                <img class="card-img" src="https://wiser.eco/wp-content/uploads/2021/10/Zero-Waste-Living-Starter-Kit_-20-zero-waste-products-you-need-2-scaled.jpg" class="product-thumb" alt="">
+                
+                <div class="text-area">
+                    <h2 class="card-title">Zero Waste Living: Practical Tips for Reducing Waste in Your Daily Life</h2>
+                    <p class="card-desc">Explore simple yet effective strategies to minimize waste in your everyday routines, helping you live more sustainably and create a cleaner future.</p>
+                </div>
+                
+                <a class="card-btn">More info</a>
+            </div>
+
+            <div class="product-card">
+                <img class="card-img" src="https://cdn.vox-cdn.com/thumbor/hLpe_Qv-JaYw4FqXwWcIkNe80io=/0x0:1000x750/1200x800/filters:focal(0x0:1000x750)/cdn.vox-cdn.com/uploads/chorus_image/image/46225418/shutterstock_72500704.0.0.jpg" class="product-thumb" alt="">
+                
+                <div class="text-area">
+                    <h2 class="card-title">The Benefits of Renewable Energy: Harnessing the Power of the Sun, Wind, and Water</h2>
+                    <p class="card-desc"> Discover the advantages of renewable energy sources and how they are revolutionizing the way we power our homes and businesses, while mitigating the harmful effects of fossil fuels.</p>
+                </div>
+                
+                <a class="card-btn">More info</a>
+            </div>
+
+            <div class="product-card">
+                <img class="card-img" src="https://assets.gqindia.com/photos/62a828526fabdc362b4ae8b5/16:9/pass/sustainable%20eating.jpg" class="product-thumb" alt="">
+                
+                <div class="text-area">
+                    <h2 class="card-title">Sustainable Eating: Nourishing Your Body and the Planet with Plant-Based Meals</h2>
+                    <p class="card-desc">Delve into the world of sustainable eating and unlock the incredible benefits of plant-based meals for your health, the environment, and animal welfare.</p>
+                </div>
+                
+                <a class="card-btn">More info</a>
+            </div>
+
+            <div class="product-card">
+                <img class="card-img" src="https://homedesignlover.com/wp-content/uploads/2011/11/eco-friendly-homes1.jpg" class="product-thumb" alt="">
+                
+                <div class="text-area">
+                    <h2 class="card-title">Green Home Makeover: Transforming Your Space into an Eco-Friendly Haven</h2>
+                    <p class="card-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex ipsum aliquid eos accusantium minus, obcaecati excepturi amet eum?</p>
+                </div>
+                
+                <a class="card-btn">More info</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Javascript -->
+    <script src="{% static '/parallax.js' %}"></script>
+    <script src="{% static '/script.js' %}"></script>
+
+    <!-- ion icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
